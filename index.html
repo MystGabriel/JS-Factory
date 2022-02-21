@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <title>JS Factory</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="content">
+
+            <div class="logo">JS <br> <span>FACTORY</span> </div>
+
+            <div class="navigation">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <p class="js-text">JS</p>
+                            <p class="js-title_swipe">CALCULATOR</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#drag-drop">
+                            <p class="js-text">JS</p>
+                            <p class="js-title_swipe">DRAG & DROP</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#weather">
+                            <p class="js-text">JS</p>
+                            <p class="js-title_swipe">WEATHER</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <p class="js-text">JS</p>
+                            <p class="js-title_swipe">IMC CALCULATOR</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#todo">
+                            <p class="js-text">JS</p>
+                            <p class="js-title_swipe">TODO LIST</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+        </div>
+    </header>
+
+    <!-- SECTION START -->
+    <section class="start">
+        <div class="content">
+            <p>JS FACTORY START</p>
+        </div>
+    </section>
+
+    <!-- SECTION DRAG & DROP -->
+    <section class="drag-drop" id="drag-drop">
+        <div class="content">
+
+            <div class="section-title">
+                <div class="logo">JS <br> <span>FACTORY</span></div>
+                <div class="title">DRAG & DROP</div>
+            </div>
+
+            <!-- BUILD AREA -->
+            <div class="cards">
+                <div class="card">
+                    <p>1</p>
+                    <div class="fill" draggable="true"></div>
+                </div>
+                <div class="card">
+                    <p>2</p>
+                </div>
+                <div class="card">
+                    <p>3</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION WEATHER -->
+    <section class="weather" id="weather">
+        <div class="content">
+
+            <div class="section-title">
+                <div class="logo">JS <br> <span>FACTORY</span></div>
+                <div class="title">WEATHER</div>
+            </div>
+
+            <!-- BUILD AREA -->
+            <div class="weather-container">
+                <form id="form">
+                    <input type="text" autocomplete="country" id="search" placeholder="Search by location">
+                    <button class="search-location"><i class='bx bx-search'></i></button>
+                </form>
+                <div class="temp-infos">
+                    <div class="current-temp-icon">
+                        <i class='bx bx-sun'></i>
+                    </div>
+                    <div class="current-temp-text">
+                        <p>WEATHER</p>
+                    </div>
+                </div>
+                <div class="location-infos">
+                    <div class="current-location-icon">
+                        <i class='bx bx-building-house'></i>
+                    </div>
+                    <div class="current-location-text">
+                        <P>CITY</P>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION TODO -->
+    <section class="todo" id="todo">
+        <div class="content">
+
+            <div class="section-title">
+                <div class="logo">JS <br> <span>FACTORY</span></div>
+                <div class="title">TODO</div>
+            </div>
+
+            <!-- BUILD AREA -->
+            <div class="todo-container">
+                <div class="add-task">
+                    <form id="form-task">
+                        <button class="add-task_btn">+</button>
+                        <input type="text" autocomplete="off" placeholder="Add a task" id="create-task">
+                    </form>
+                </div>
+                <div class="qtd-tasks">
+                    <p>Tasks - 0</p>
+                </div>
+                <div class="tasks"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

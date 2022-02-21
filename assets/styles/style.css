@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Armin';
+    src: url('../fonts/armin-soft-black.ttf');
+}
+
+
+/* GLOBAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Armin', sans-serif;
+}
+
+.content {
+    max-width: 1400px;
+    padding: 40px;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #2E2E2E;
+}
+
+section {
+    width: 100%;
+}
+
+section .section-title {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+section .logo {
+    font-size: 35px;
+    color: #FAC75C;
+    line-height: 0.3;
+    margin-right: 10px;
+    margin-bottom: 2.4px;
+}
+
+section .logo span {
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+section .title {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    border-bottom: 1px solid #FAC75C;
+}
+
+
+/* HEADER */
+
+header .content {
+    position: relative;
+    padding-top: 80px;
+}
+
+header .logo {
+    font-size: 50px;
+    color: #FAC75C;
+    line-height: 0.3;
+    margin-bottom: 40px;
+}
+
+header .logo span {
+    font-size: 13.5px;
+    color: #FFFFFF;
+}
+
+.navigation {
+    position: absolute;
+    top: 100px;
+    right: 33px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 45px !important;
+    height: 45px !important;
+    border: 2px solid #FAC75C;
+    border-radius: 50%;
+    color: #FAC75C !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: -117px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 30px !important;
+}
+
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.swiper a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    background: #222222;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border: 3px solid #FAC75C;
+    border-radius: 10px;
+}
+
+.swiper .swiper-slide .js-text {
+    font-size: 70px;
+    color: #FAC75C;
+    line-height: 1;
+}
+
+.swiper .swiper-slide .js-title_swipe {
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+header .line {
+    width: 100%;
+    height: 1px;
+    margin-top: 40px;
+    background: #FAC75C;
+}
+
+
+/* SECTIONS */
+
+
+/* START */
+
+.start .content p {
+    width: 100%;
+    padding: 50px 0;
+    font-size: 25px;
+    text-align: center;
+    color: #222222;
+    background: #FAC75C;
+    border-radius: 10px;
+}
+
+
+/* DRAG & DROP */
+
+.drag-drop .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drag-drop .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    flex: 1 1 250px;
+    margin: 10px;
+    background: #222222;
+    border: 2px solid #FAC75C;
+    border-radius: 10px;
+    cursor: move;
+}
+
+.drag-drop .cards .card p {
+    font-size: 70px;
+    color: #FFFFFF;
+}
+
+
+/* WEATHER */
+
+.weather .weather-container {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather .weather-container form {
+    position: relative;
+}
+
+.weather .weather-container #search {
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #FAC75C;
+    border-radius: 5px;
+    background: #222222;
+    padding: 6px;
+    outline: none;
+    margin-right: 10px;
+    color: #FFFFFF;
+}
+
+.weather .weather-container button.search-location {
+    position: absolute;
+    height: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.weather .weather-container button.search-location i {
+    font-size: 25px;
+    color: #FAC75C;
+}
+
+.weather .weather-container .temp-infos,
+.weather .weather-container .location-infos {
+    display: flex;
+    align-items: center;
+}
+
+.weather .weather-container .temp-infos>div i,
+.weather .weather-container .location-infos>div i {
+    margin-right: 10px;
+    font-size: 38px;
+    color: #FAC75C;
+}
+
+.weather .weather-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/* TODO */
+
+.todo .todo-container p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.todo .todo-container .add-task {
+    width: 100%;
+    border: 1px dashed #FAC75C;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.todo .todo-container .add-task form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.todo .todo-container .add-task form input {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #D6D6D6;
+}
+
+.todo .todo-container .add-task form .add-task_btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 35px;
+    height: 30px;
+    background: #FAC75C;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #222222;
+    cursor: pointer;
+}
+
+.todo .todo-container .qtd-tasks {
+    font-size: 18px;
+    font-weight: 500;
+    color: #d6d6d6;
+    margin: 30px 0;
+}
+
+.todo .todo-container .tasks {
+    display: block;
+}
+
+.todo .todo-container .tasks .task-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background: #222222;
+    margin: 10px 0;
+}
+
+.todo .todo-container .tasks .task-content .check-input {
+    display: flex;
+    align-items: center;
+}
+
+.todo .todo-container .tasks .task-content .check-input input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #222222;
+    border: 1px solid #FAC75C;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.todo .todo-container .tasks .task-content .check-input label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #D6D6D6;
+    margin: 0 10px;
+}
+
+.todo .todo-container .tasks .task-content .check-input input[type='checkbox']::after {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 17px;
+    color: #D6D6D6;
+    display: none;
+}
+
+.todo .todo-container .tasks .task-content .check-input input[type='checkbox']:hover {
+    background-color: #2E2E2E;
+}
+
+.todo .todo-container .tasks .task-content .check-input input[type='checkbox']:checked {
+    background-color: #FAC75C;
+}
+
+.todo .todo-container .tasks .task-content .check-input input[type='checkbox']:checked::after {
+    display: block;
+    color: #222222;
+}
+
+.todo .todo-container .tasks .task-content .delete-btn .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.todo .todo-container .tasks .task-content .delete-btn .delete i {
+    color: #FAC75C;
+    font-size: 20px;
+}
+
+
+/* MEDIA QUERY */
+
+@media(max-width:698px) {
+    .content {
+        padding: 20px;
+    }
+    .navigation {
+        right: 11px;
+    }
+    .weather .weather-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .weather .weather-container #search {
+        width: 100%;
+    }
+    .weather .weather-container form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .weather .weather-container .temp-infos {
+        margin-bottom: 20px;
+    }
+    .weather .weather-container button.search-location {
+        top: 1px;
+        right: 9px;
+    }
+}
